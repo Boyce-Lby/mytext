@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	{$uid}{$token}
+	<script>
+	$(function(){
+		var a={$uid};
+		var b={$token};
+        $.ajax({
+	               url:'http://sso.me/login?checkToken',
+	               xhrFields: {withCredentials: 'http://sso.me/'},
+	               dataType:'json',
+	               type:'post',
+	               data:{token:'2',userid:'1d3dd15624572b1ca06e6522ddaff2d8'},
+	               success:function(data){
+	                        alert(1);
+	               },
+	               error:function(err){
+	                        console.log(err);
+                   }
+         		});
+	})
+
+	</script>
+</body>
+</html>
