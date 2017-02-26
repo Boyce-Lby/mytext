@@ -6,5 +6,32 @@
 <body>
 首页<br>
 <a href="{:url('index/logout')}">退出登录</a>
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+             type: "post",
+             url: "{:url('index/is_login')}",
+             data: {token:getCookie('token')},
+             dataType: "json",
+             success: function(data){
+             	// if (!data) {window.location.href="{:url('index/login')}"};
+                      }
+         });
+	})
+	function getCookie(cookieName){  
+        var cookieValue="";  
+        if (document.cookie && document.cookie != '') {   
+            var cookies = document.cookie.split(';');  
+            for (var i = 0; i < cookies.length; i++) {   
+                 var cookie = cookies[i];  
+                 if (cookie.substring(0, cookieName.length + 2).trim() == cookieName.trim() + "=") {  
+                       cookieValue = cookie.substring(cookieName.length + 2, cookie.length);   
+                       break;  
+                 }  
+             }  
+        }   
+        return cookieValue;  
+    } 
+</script>
 </body>
 </html>

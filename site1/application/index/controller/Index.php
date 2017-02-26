@@ -25,11 +25,13 @@ class Index extends Controller
     		$postUrl = "http://sso.me/login/".$nickname."/".$password; 
 			$res = httpPost($postUrl); 
 			$res = json_decode($res,true);  
-			Cookie::set('uid',$res['uid']);
-			// Session::set('token',$res['token']);
-			$this->assign('uid', $res['uid']);
-			$this->assign('token', $res['token']);
-			return $this->fetch('login1');
+			Session::set('user',$res['user']);
+			Session::set('token',$res['token']);
+			// $this->assign('uid', $res['uid']);
+			// $this->assign('token', $res['token']);
+			// return $this->fetch('login1');
+      
+            $this->redirect('Index/index');      // 
     	}else{
 			return $this->fetch('login');
     	}
@@ -43,11 +45,18 @@ class Index extends Controller
     }
     public function is_login()
     {
-    	$user = Session::get('user');
-    	if (empty($user)) {
+        $token = request()->post('token');
+    	if (empty($token)) {
 	        return 0;
 	    } else {
-	        return Session::get('token') == md5($user) ? $user : 0;
+            $postUrl = "http://sso.me/index/login/islogin/".$token; 
+            $res = httpPost($postUrl);
+            if (!$res) {
+                return 0;
+            }else{
+                $this->redirect('Index/index');      // 
+            }
+	        // return Session::get('token') == md5($user) ? $user : 0;
 	    }
     }
 
