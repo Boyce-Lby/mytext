@@ -1,0 +1,14 @@
+{
+    "name": "lby/sso",
+    "description": "text project",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "lby",
+            "email": "317304327@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
