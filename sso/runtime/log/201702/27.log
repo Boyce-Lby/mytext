@@ -1,0 +1,271 @@
+[ 2017-02-27T11:02:09+08:00 ] ::1 ::1 GET /sso/sso/public/
+[ log ] localhost/sso/sso/public/ [运行时间：0.015132s][吞吐率：66.09req/s] [内存消耗：1,253.11kb] [文件加载：25]
+[ info ] [ LANG ] E:\wamp\www\sso\sso\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=ug9panpltoi9s3vkglct7gplq4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\wamp\www\sso\sso\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-02-27T11:02:16+08:00 ] 127.0.0.4 127.0.0.1 GET /
+[ log ] sso.me/ [运行时间：0.012642s][吞吐率：79.10req/s] [内存消耗：1,252.53kb] [文件加载：25]
+[ info ] [ LANG ] E:\wamp\www\sso\sso\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sso.me',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1767597056',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\wamp\www\sso\sso\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-02-27T11:02:21+08:00 ] 127.0.0.4 127.0.0.1 GET /login/lby1/123123
+[ log ] sso.me/login/lby1/123123 [运行时间：0.044105s][吞吐率：22.67req/s] [内存消耗：2,799.37kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\sso\sso\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sso.me',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1767597056; pgv_si=s3868772352',
+)
+[ info ] [ PARAM ] array (
+  0 => 'lby1',
+  1 => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ E:\wamp\www\sso\sso\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010130s ] mysql:dbname=sso;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004707s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `nickname` = 'lby1'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.000512s ]
+
+---------------------------------------------------------------
+[ 2017-02-27T11:13:12+08:00 ] 127.0.0.4 127.0.0.1 GET /login/lby1/123123
+[ log ] sso.me/login/lby1/123123 [运行时间：0.547960s][吞吐率：1.82req/s] [内存消耗：2,799.95kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\sso\sso\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sso.me',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1767597056; pgv_si=s3868772352; PHPSESSID=t7pad0i6oc8vu0e1he5f21rm46',
+)
+[ info ] [ PARAM ] array (
+  0 => 'lby1',
+  1 => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ E:\wamp\www\sso\sso\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:dbname=sso;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004734s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `nickname` = 'lby1'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.000645s ]
+
+---------------------------------------------------------------
+[ 2017-02-27T11:13:35+08:00 ] 127.0.0.4 127.0.0.1 GET /login/lby1/123123
+[ log ] sso.me/login/lby1/123123 [运行时间：0.662812s][吞吐率：1.51req/s] [内存消耗：2,799.95kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\sso\sso\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sso.me',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1767597056; pgv_si=s3868772352; PHPSESSID=t7pad0i6oc8vu0e1he5f21rm46',
+)
+[ info ] [ PARAM ] array (
+  0 => 'lby1',
+  1 => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ E:\wamp\www\sso\sso\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:dbname=sso;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.003740s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `nickname` = 'lby1'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.000397s ]
+
+---------------------------------------------------------------
+[ 2017-02-27T11:21:46+08:00 ] 127.0.0.4 127.0.0.1 GET /login/lby1/123123
+[ log ] sso.me/login/lby1/123123 [运行时间：0.026880s][吞吐率：37.20req/s] [内存消耗：2,799.95kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\sso\sso\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sso.me',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1767597056; pgv_si=s3868772352; PHPSESSID=t7pad0i6oc8vu0e1he5f21rm46',
+)
+[ info ] [ PARAM ] array (
+  0 => 'lby1',
+  1 => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ E:\wamp\www\sso\sso\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sso;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `nickname` = 'lby1'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.000552s ]
+
+---------------------------------------------------------------
+[ 2017-02-27T11:23:19+08:00 ] 127.0.0.4 127.0.0.1 GET /login/lby1/123123
+[ log ] sso.me/login/lby1/123123 [运行时间：0.021749s][吞吐率：45.98req/s] [内存消耗：2,799.95kb] [文件加载：41]
+[ info ] [ LANG ] E:\wamp\www\sso\sso\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'sso.me',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1767597056; pgv_si=s3868772352; PHPSESSID=t7pad0i6oc8vu0e1he5f21rm46',
+)
+[ info ] [ PARAM ] array (
+  0 => 'lby1',
+  1 => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ E:\wamp\www\sso\sso\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000788s ] mysql:dbname=sso;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `nickname` = 'lby1'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.000597s ]
+
+---------------------------------------------------------------
